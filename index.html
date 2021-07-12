@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>A-shop</title>
+  <!-- favicon -->
+  <link rel="icon" href="./favicon.png" /> 
+  <!-- css -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css" />
+  <!-- google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@700&display=swap" rel="stylesheet">  
+  <!-- icons -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="./css/main.css" />
+  <!-- swiper -->
+
+   <!--GSAP & ScrollToPlugin-->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js" integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ==" crossorigin="anonymous"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollToPlugin.min.js" integrity="sha512-nTHzMQK7lwWt8nL4KF6DhwLHluv6dVq/hNnj2PBN0xMl2KaMm1PM02csx57mmToPAodHmPsipoERRNn4pG7f+Q==" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <!-- js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.20/lodash.min.js" integrity="sha512-90vH1Z83AJY9DmlWa8WkjkV79yfS2n2Oxhsi2dZbIv0nC4E6m5AbH8Nh156kkM7JePmqD6tcZsfad1ueoaovww==" crossorigin="anonymous"></script>  
+  <script src = "https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script defer src="/main.js"></script>
+</head>
+<body>
+
+  <header>
+    <div class="inner">
+
+        <a href="/" class ="logo">
+         A-shop
+        </a>
+        
+        <div class="main-menu">
+          <ul class="menu">
+            <li>
+              <a href="javascript:void(0)">Home</a>
+              
+            </li>
+            <li>
+              <a href="shop_all.html">Shop All</a>
+            </li>
+            <li>
+              <a href="javascript:void(0)">Mobile Phones</a>
+            </li>
+            <li>
+              <a href="javascript:void(0)">Tablets</a>
+            </li>
+            <li>
+              <a href="javascript:void(0)">Accessories</a>
+            </li>
+            <li>
+              <a href="javascript:void(0)">About</a>
+            </li> 
+            <li>
+              <a href="javascript:void(0)">Contact Us</a>
+            </li>  
+          </ul>
+          <ul class="login">
+         
+            <li>
+              <span class="material-icons">
+                account_circle
+                </span>
+            </li>
+            <li>
+              <a href="/login" class="login">Log In</a>
+            </li> 
+          </ul>
+        </div>
+
+
+
+    </div>
+  </header>
+
+  <section class="notice">
+    <div class="inner">
+      <div class="promotion">
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="./images/promotion_slide1.png" alt="슬라이드 1" />
+              <a href="javascript:void(0)" class ="btn">Shop now</a>
+            </div>
+            <div class="swiper-slide">
+              <img src="./images/promotion_slide2.png" alt="슬라이드 2" />
+              <a href="javascript:void(0)" class ="btn">Get Started</a>
+            </div>
+            <div class="swiper-slide">
+              <img src="./images/promotion_slide3.png" alt="슬라이드 1" />
+              <a href="javascript:void(0)" class ="btn">Shop now</a>
+            </div>
+            <div class="swiper-slide">
+              <img src="./images/promotion_slide4.png" alt="슬라이드 1" />
+              <a href="javascript:void(0)" class ="btn">Get Started</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="product">
+        <div class="inner">
+          <div class="headline">
+            Most Popular <br>
+            Mobile Phones <hr>
+          </div>
+          <div class="items">
+            <div class="bodyform">
+              <div class="div-box">
+                  <img src="images/iPhone_12Pro.png" class="img_style1">
+                  <p>iPhone 12 PRO MAX</p>
+                  <p class="p_money">$999.00</p>
+                  <button class="btn" onClick="openModal()">Add to Cart</button>
+                  
+              </div>
+              <div class="div-box">
+                  <img src="images/iPhone_12.png" class="img_style1">
+                  <p>iPhone 12</p>
+                  <p class="p_money">$699.00</p>
+                  <button class="btn">Add to Cart</button>
+                  
+              </div>
+              <div class="div-box">
+                  <img src="images/iPhone_11Pro.png" class="img_style1">
+                  <p>iPhone 11Pro</p>
+                  <p class="p_money">$499.00</p>
+                  <button class="btn">Add to Cart</button>
+                  
+              </div>
+              <div class="div-box">
+                  <img src="images/iPhone_11.png" class="img_style1">
+                  <p>iPhone 1</p>
+                  <p class="p_money">$399.00</p>
+                  <button class="btn">Add to Cart</button>
+                  
+              </div>
+            </div>
+          </div>
+          <div class="headline">
+            Bestselling <br>
+            Tablets <hr>
+          </div>
+          <div class="items">
+            <div class="bodyform">
+              <div class="div-box">
+                  <img src="images/iPad_Pro.png" class="img_style1">
+                  <p>iPad Pro</p>
+                  <p class="p_money">$799.00</p>
+                  <button class="btn" onClick="openModal()">Add to Cart</button>
+                  
+              </div>
+              <div class="div-box">
+                  <img src="images/iPad_Air.png" class="img_style1">
+                  <p>iPad_Air</p>
+                  <p class="p_money">$599.00</p>
+                  <button class="btn">Add to Cart</button>
+                  
+              </div>
+              <div class="div-box">
+                  <img src="images/iPad.png" class="img_style1">
+                  <p>iPad</p>
+                  <p class="p_money">$499.00</p>
+                  <button class="btn">Add to Cart</button>
+                  
+              </div>
+              <div class="div-box">
+                  <img src="images/iPad_mini.png" class="img_style1">
+                  <p>iPad mini</p>
+                  <p class="p_money">$399.00</p>
+                  <button class="btn">Add to Cart</button>
+                  
+              </div>
+            </div>
+          </div>
+          <div class="headline">
+            Mobile <br>
+            Accessories <hr>
+          </div>
+          <div class="items">
+            <div class="bodyform">
+              <div class="div-box">
+                  <img src="images/Apple_Watch_6.png" class="img_style1">
+                  <p>Apple_Watch_6</p>
+                  <p class="p_money">$399.00</p>
+                  <button class="btn" onClick="openModal()">Add to Cart</button>
+                  
+              </div>
+              <div class="div-box">
+                  <img src="images/Apple_Watch_SE.png" class="img_style1">
+                  <p>Apple_Watch_SE</p>
+                  <p class="p_money">$279.00</p>
+                  <button class="btn">Add to Cart</button>
+                  
+              </div>
+              <div class="div-box">
+                  <img src="images/Apple_Watch_3.png" class="img_style1">
+                  <p>Apple_Watch_3</p>
+                  <p class="p_money">$199.00</p>
+                  <button class="btn">Add to Cart</button>
+                  
+              </div>
+              <div class="div-box">
+                  <img src="images/AipPods_Pro.png" class="img_style1">
+                  <p>AipPods_Pro</p>
+                  <p class="p_money">$249.00</p>
+                  <button class="btn">Add to Cart</button>
+                  
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+  </section>
+  <!-- AD -->
+  <section class="ad">
+    <div class="inner">
+      <p>Our <br> Brands</p>
+      
+      <div class="brands">
+        <img src="./images/brands.PNG" alt="brands">
+      </div>
+    </div>
+  </section>
+  <!-- FOOTER -->
+  <footer>
+    <div class="inner">
+        <div class="info">
+            <span>businesee number 201-81-21515</span>
+            <span>a-market seungho -lee , steven code</span>
+            <span>TEL : 02) 2987-3105 / FAX : 02) 3015-1106</span>
+            <span>CTO : lee si won</span>
+        </div>
+
+        <p class="copyright">
+            &copy; <span class="this-year"></span> Copyright © 2021 Apple Inc. All rights reserved.
+        </p>
+        
+    </div>
+
+</footer>
+
+  <!--TO TOP BUTTON-->
+  <div id="to-top">
+    <div class="material-icons">arrow_upward</div>
+  </div>
+</body>
+</html>
